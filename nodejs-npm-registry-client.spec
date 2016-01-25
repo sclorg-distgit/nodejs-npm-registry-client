@@ -3,7 +3,7 @@
 %{?nodejs_find_provides_and_requires}
 
 Name:           %{?scl_prefix}nodejs-npm-registry-client
-Version:        2.0.7
+Version:        7.0.8
 Release:        1%{?dist}
 Summary:        Client for the npm registry
 
@@ -47,6 +47,12 @@ rm -rf %buildroot
 %doc README.md LICENSE
 
 %changelog
+* Mon Nov 30 2015 Tomas Hrcka <thrcka@redhat.com> - 7.0.8-1
+- New upstream release
+
+* Fri Nov 27 2015 Tomas Hrcka <thrcka@redhat.com> - 4.0.3-1
+- Rebase to latest upstream
+
 * Fri Jan 09 2015 Tomas Hrcka <thrcka@redhat.com> - 2.0.7-1
 - New upstream release 2.0.7
 
