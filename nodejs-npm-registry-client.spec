@@ -4,9 +4,9 @@
 
 Name:           %{?scl_prefix}nodejs-npm-registry-client
 Version:        7.2.1
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        Client for the npm registry
-License:        BSD
+License:        ISC
 URL:            https://github.com/isaacs/npm-registry-client
 Source0:        http://registry.npmjs.org/npm-registry-client/-/npm-registry-client-%{version}.tgz
 BuildRequires:  %{?scl_prefix}nodejs-devel
@@ -37,6 +37,9 @@ cp -pr package.json index.js lib %{buildroot}%{nodejs_sitelib}/npm-registry-clie
 %doc README.md LICENSE
 
 %changelog
+* Mon Mar 06 2017 Zuzana Svetlikova <zsvetlik@redhat.com> - 7.2.1-3
+- Correct license
+
 * Thu Sep 22 2016 Zuzana Svetlikova <zsvetlik@redhat.com> - 7.2.1-2
 - Fixdep
 
